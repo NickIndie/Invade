@@ -51,6 +51,7 @@
      <Compile Include="Assets\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\Retro Pixel\Scripts\RetroPixel.cs" />
      <Compile Include="Assets\Tom Ass-ets\Scripts\ItemMangerScript.cs" />
+     <Compile Include="Assets\Tom Ass-ets\Scripts\Pickup_ItemManger.cs" />
      <Compile Include="Assets\Tom Ass-ets\Scripts\Player_ItemPickup.cs" />
      <None Include="Assets\Retro Pixel\Resources\Shaders\RetroPixel5.shader" />
      <None Include="Assets\Retro Pixel\Resources\Shaders\RetroPixel8.shader" />

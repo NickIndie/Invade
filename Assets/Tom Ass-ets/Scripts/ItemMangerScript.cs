@@ -12,6 +12,10 @@ public class ItemMangerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		//To display total items in console:
+		//Debug.Log ("Total items " + TotItems);
+	}
+	void addPickUp(){
+		TotItems += 1;
 	}
 }

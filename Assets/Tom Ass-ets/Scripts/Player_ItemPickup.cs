@@ -12,4 +12,6 @@ public class Player_ItemPickup : MonoBehaviour {
 	void Update () {
 	
 	}
+
+		
 }
