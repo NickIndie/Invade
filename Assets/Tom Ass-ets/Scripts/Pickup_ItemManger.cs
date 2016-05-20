@@ -12,14 +12,21 @@ public class Pickup_ItemManger : MonoBehaviour {
 	void Update () {
 	
 	}
-	void OnTriggerEnter(Collider col) {
+//	void OnTriggerEnter(Collider col) {
+//
+//		//if the other collider is 'player'
+//		if (col.gameObject.tag == "Player") {
+//			//tells the manager gameObj to add a pickup
+//			manager.SendMessage ("addPickUp");
+//			//destroys this gameObj
+//			Destroy (this.gameObject);
+//		}
+//	}
 
-		//if the other collider is 'player'
-		if (col.gameObject.tag == "Player") {
-			//tells the manager gameObj to add a pickup
-			manager.SendMessage ("addPickUp");
-			//destroys this gameObj
-			Destroy (this.gameObject);
-		}
+	void Player_Interact(){
+		//tells the manager gameObj to add a pickup
+		manager.SendMessage ("addPickUp");
+		//destroys this gameObj
+		Destroy (this.gameObject);
 	}
 }
