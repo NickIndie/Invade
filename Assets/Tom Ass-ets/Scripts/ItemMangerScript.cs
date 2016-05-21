@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class ItemMangerScript : MonoBehaviour {
-	public int TotWeight;
+	public float TotWeight;
 	public int TotItems;
-	public int TotPrice;
+	public float TotPrice;
 	// Use this for initialization
-	void Start () {
+	void Start() {
 	
 	}
 	
@@ -15,7 +15,9 @@ public class ItemMangerScript : MonoBehaviour {
 		//To display total items in console:
 		//Debug.Log ("Total items " + TotItems);
 	}
-	void addPickUp(){
+	void addPickUp(float[] farr){
 		TotItems += 1;
+		TotPrice += farr [0];
+		TotWeight += farr [1];
 	}
 }
