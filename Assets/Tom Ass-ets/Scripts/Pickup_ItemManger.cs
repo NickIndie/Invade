@@ -3,9 +3,14 @@ using System.Collections;
 
 public class Pickup_ItemManger : MonoBehaviour {
 	public GameObject manager;
+	private float[] ObjInfo;
+	public float Value;
+	public float Weight;
 	// Use this for initialization
 	void Start () {
-	
+		ObjInfo = new float[2];
+		ObjInfo [0] = Value;  //$$ Value
+		ObjInfo [1] = Weight;  // weight
 	}
 	
 	// Update is called once per frame
@@ -25,7 +30,7 @@ public class Pickup_ItemManger : MonoBehaviour {
 
 	void Player_Interact(){
 		//tells the manager gameObj to add a pickup
-		manager.SendMessage ("addPickUp");
+		manager.SendMessage ("addPickUp", ObjInfo);
 		//destroys this gameObj
 		Destroy (this.gameObject);
 	}
